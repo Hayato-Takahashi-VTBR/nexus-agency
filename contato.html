@@ -1,1 +1,96 @@
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Nexus — Agência VTuber</title>
+<style>
+:root {
+--ciano: #00ffff;
+--roxo: #7b2cff;
+--preto: #0b0b0f;
+--cinza: #1a1a22;
+--branco: #eaeaff;
+}
 
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Segoe UI', sans-serif;
+}
+
+
+body {
+background: linear-gradient(135deg, var(--preto), #050508);
+color: var(--branco);
+min-height: 100vh;
+}
+
+
+header {
+padding: 20px 40px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+background: rgba(0, 0, 0, 0.6);
+border-bottom: 1px solid rgba(0, 255, 255, 0.15);
+backdrop-filter: blur(8px);
+}
+
+
+header h1 {
+color: var(--ciano);
+letter-spacing: 2px;
+}
+
+
+nav a {
+margin-left: 24px;
+text-decoration: none;
+color: var(--branco);
+font-weight: 500;
+position: relative;
+}
+
+
+nav a::after {
+content: '';
+position: absolute;
+left: 0;
+bottom: -6px;
+width: 0;
+height: 2px;
+background: linear-gradient(90deg, var(--ciano), var(--roxo));
+transition: width 0.3s ease;
+}
+
+
+nav a:hover::after {
+width: 100%;
+}
+
+
+main {
+padding: 80px 40px;
+text-align: center;
+}
+
+
+main h2 {
+font-size: 3rem;
+background: linear-gradient(90deg, var(--ciano), var(--roxo));
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+
+
+main p {
+max-width: 700px;
+margin: 24px auto;
+line-height: 1.6;
+color: #cfd0ff;
+}
+
+
+</html>
